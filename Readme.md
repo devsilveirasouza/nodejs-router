@@ -26,4 +26,10 @@
     - yarn dev
     ou
     - npm run dev
+
+#### Atualizações
+    - Adicionado framework Materialize para estilização CSS
+    - https://materializecss.com/getting-started.html
+    
+
     
