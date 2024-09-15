@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Produto</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Editar Produto</h1>
+    <form action="/products/edit/<%= product.id %>" method="POST">
+        <input type="hidden" name="id" value="<%= product.id %>">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" value="<%= product.name %>" required>
+        <label for="price">Preço:</label>
+        <input type="number" name="price" value="<%= product.price %>" required>
+        <label for="quantity">Quantidade:</label>
+        <input type="number" name="quantity" value="<%= product.quantity %>" required>
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Produto</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Adicionar Produto</h1>
+    <form action="/products/add" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" required>
+        <label for="price">Preço:</label>
+        <input type="number" name="price" required>
+        <label for="quantity">Quantidade:</label>
+        <input type="number" name="quantity" required>
+        <button type="submit">Adicionar</button>
+    </form>
+</body>
+</html>

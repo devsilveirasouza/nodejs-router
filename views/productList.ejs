@@ -14,8 +14,8 @@
         <% products.forEach(product=> { %>
             <li>
                 <%= product.name %> - $<%= product.price %> - <%= product.quantity %> unidades
-                            <a href="#">Editar</a>
-                            <a href="#">Deletar</a>
+                <a href="/products/edit/<%= product.id %>">Editar</a>
+                <a href="/products/delete/<%= product.id %>">Deletar</a>
             </li>
             <% }); %>
     </ul>

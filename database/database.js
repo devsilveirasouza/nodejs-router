@@ -8,6 +8,7 @@ const db = new sqlite3.Database('./database/products.db', (err) => {
     }
 });
 
+// Criação da tabela
 db.serialize(() => {
     db.run(`
         CREATE TABLE IF NOT EXISTS products(
